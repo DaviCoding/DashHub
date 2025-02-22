@@ -110,15 +110,13 @@ async function update() {
         titles: [" "],
         data: [
           Number(
-            Number(
-              (await performance_info.mem.memUsage()).used / 1000000000 // Convert to GB
-            ).toFixed(3)
-          ),
+            Number((await performance_info.mem.memUsage()).used) / 1000000000 /// Convert to GB
+          ).toFixed(0),
         ],
       },
-      `Memory Monitoring in GB (${Number(
-        (await performance_info.mem.memUsage()).total.toString().slice(0, 2)
-      )}gb Global)`,
+      `Memory Monitoring in GB (${(await performance_info.mem.memUsage()).total
+        .toString()
+        .slice(0, 2)}gb Global)`,
       "barchart",
       29.5, //X
       0, // Y
@@ -137,7 +135,6 @@ async function update() {
     err.log(`*********${error}*********`);
   }
 } // Chama a função a cada 500ms sem criar múltiplos
-
 setInterval(update, 1000);
 
 setTimeout(() => {
