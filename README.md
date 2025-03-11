@@ -54,10 +54,7 @@ Contribuições são bem-vindas! Para contribuir, siga os passos:
    ```
 5. Abra um Pull Request 🚀
 
-## 📄 Licença
-Este projeto está sob a licença MIT. Para mais detalhes, consulte o arquivo `LICENSE`.
-
 ---
 
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)!
+Feito com ❤️ por [Davi Alves](https://github.com/DaviCoding)!
 
